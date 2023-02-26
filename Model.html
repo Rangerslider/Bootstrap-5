@@ -133,8 +133,72 @@ Centered Modal vertically and horizontally within the page : .modal-dialog-cente
   </div>
 </div>
 
+<!--large,small,extra large -->
+<div class="m-4">
+  <!-- Extra Large modal -->
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#extraLargeModal">Extra Large modal</button>
 
+  <div id="extraLargeModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Extra Large Modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Add the <code>.modal-xl</code> class on <code>.modal-dialog</code> to create this extra large modal.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">OK</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
+  <!-- Large modal -->
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#largeModal">Large modal</button>
+
+  <div id="largeModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Large Modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Add the <code>.modal-lg</code> class on <code>.modal-dialog</code> to create this large modal.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">OK</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Small modal -->
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#smallModal">Small modal</button>
+
+  <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Small Modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Add the <code>.modal-sm</code> class on <code>.modal-dialog</code> to create this small modal.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">OK</button>
+              </div>
+          </div>
+      </div>
+  </div>
+<p class="mt-4"><strong>Note:</strong> Please change the Editor layout/orientation to see how responsive modal sizing actually works.</p>
+</div>
 </body>
 </html>
 
