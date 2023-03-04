@@ -1,0 +1,142 @@
+<!--normal toasts-->
+<!-- toast means ekta button e ekta massage hidden  thkabe button ta click  korle sei masg ta show korbe  eta te time o  dekhabe masg koto time age  asce  onekta massanger er notifivcation er moto -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creating Toast in Bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="m-4">
+    <p><strong>Note:</strong> The <code>.show</code> is added to display the toast, and the class <code>.fade</code> apply a CSS fade transition to the toast. By default, toast it is hidden.</p>
+
+    <div class="toast fade show" id="myToast">
+        <div class="toast-header">
+            <strong class="me-auto"><i class="bi-gift-fill"></i> We miss you!</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            It's been a long time since you visited us. We've something special for you. <a href="#">Click here!</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+<!--normal toasts   with js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trigger Bootstrap Toast via JavaScript</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+/* Style for positioning toast */
+.toast{
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    var btn = document.getElementById("myBtn");
+    var element = document.getElementById("myToast");
+
+    // Create toast instance
+    var myToast = new bootstrap.Toast(element);
+
+    btn.addEventListener("click", function(){
+        myToast.show();
+    });
+});
+</script>
+</head>
+<body>
+<div class="m-4">
+  	<p><strong>Note:</strong> By default toasts will automatically hide if you do not set autohide to false.</p>
+	  <button type="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+    
+    <div class="toast" id="myToast">
+        <div class="toast-header">
+            <strong class="me-auto"><i class="bi-gift-fill"></i> We miss you!</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            It's been a long time since you visited us. We've something special for you. <a href="#">Click here!</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--normal toasts   with jquery pore  jquery porle bujte parbo   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stacking Toasts Vertically in Bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".toast").toast({
+    	autohide: false
+    });
+});
+</script>
+</head>
+<body>
+<div class="m-4">
+    <p><strong>Note:</strong> The <code>.show</code> is added to display the toast, and the class <code>.fade</code> apply a CSS fade transition to the toast. By default, toast it is hidden.</p>
+
+    <div class="toast-container">
+        <div class="toast fade show">
+            <div class="toast-header">
+                <strong class="me-auto"><i class="bi-globe"></i> Hello, world!</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                This is a basic toast message.
+            </div>
+        </div>
+    
+        <div class="toast fade show">
+            <div class="toast-header">
+                <strong class="me-auto"><i class="bi-globe"></i> Hello, world!</strong>
+                <small>5 seconds ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                See? This is another toast message.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
