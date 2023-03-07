@@ -1,0 +1,119 @@
+*** flexbox r grid er align-items alada vabe kaj kore .ak akta flex row ak akta items. flexbox a align-items dilei jto gula row ashe sob alda alda jaiga niye nibe . mane just akta akta row niye align korbe . mane 10 ta row thakle 10 take alda vabe align korbe. r grid a 
+align-items mane container er majhe kisu element thake oi element er majher jinish gula ke y axis borabor align korbe .
+
+
+<!--  
+flex  class: d-sm-flex,.d-sm-inline-flex, .d-md-flex, .d-md-inline-flex, .d-lg-flex, .d-lg-inline-flex,.d-xl-flex, .d-xl-inline-flex, .d-xxl-flex, .d-xxl-inline-flex 
+flex-direction  : .flex-row, .flex-row-reverse, .flex-column, .flex-column-reverse 
+Justify content : .justify-content-start,.justify-content-end, .justify-content-center,.justify-content-between, .justify-content-around, .justify-content-evenly
+Align items :  .align-items-start ,.align-items-end ,.align-items-center,.align-items-baseline,.align-items-stretch
+Align self : .align-self-start,.align-self-end,.align-self-center,.align-self-baseline,.align-self-stretch,.align-self-sm-start
+Fill  : .flex-fill ,.flex-fill,.flex-sm-fill,.flex-md-fill,  flex-lg-fill  ,.flex-xl-fill, .flex-xxl-fill
+Auto margins:.me-auto,.ms-auto
+Wrap :.flex-nowrap .flex-wrap , .flex-wrap-reverse.  .flex-sm-nowrap, 
+Grow   :.flex-grow-1
+shrink  :.flex-shrink-1 
+Fill :.flex-fill -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example bd-example-flex">
+
+    <!-- Example Code -->
+    
+    <div class="d-flex p-2">I'm a flexbox container!</div> <br>
+    <div class="d-inline-flex p-2">I'm an inline flexbox container!</div> 
+    .flex-row 
+    <div class="d-flex flex-row mb-3">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div> <br>
+  .flex-row-reverse
+  <div class="d-flex flex-row-reverse">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>
+    <br>
+    .flex-column
+  <div class="d-flex flex-row mb-3">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div> 
+.flex-column-reverse
+<div class="d-flex flex-row-reverse">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<br>
+.justify contatent
+<div class="d-flex justify-content-start">
+<div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex justify-content-end">
+<div class="p-2">Flex item 1</div>
+<div class="p-2">Flex item 2</div>
+<div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex justify-content-center">
+<div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex justify-content-between">
+<div class="p-2">Flex item 1</div>
+<div class="p-2">Flex item 2</div>
+<div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex justify-content-around">
+<div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex justify-content-evenly">
+<div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+
+<br>
+fill
+  <div class="d-flex">
+  <div class="p-2 flex-fill">Flex item with a lot of content</div>
+  <div class="p-2 flex-fill">Flex item</div>
+  <div class="p-2 flex-fill">Flex item</div>
+</div>
+order
+<div class="d-flex flex-nowrap">
+<div class="order-3 p-2">First flex item</div>
+<div class="order-2 p-2">Second flex item</div>
+<div class="order-1 p-2">Third flex item</div>
+</div>
+grow
+<div class="d-flex">
+<div class="p-2 flex-grow-1">Flex item</div>
+<div class="p-2">Flex item</div>
+<div class="p-2">Third flex item</div>
+</div>
+shrink
+<div class="d-flex">
+<div class="p-2 w-100">Flex item</div>
+<div class="p-2 flex-shrink-1">Flex item</div>
+</div>
+    
+  </body>
+</html>
